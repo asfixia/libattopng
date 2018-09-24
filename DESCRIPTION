@@ -1,0 +1,15 @@
+Package: libattopng
+Type: Package
+Title: Generate PNG file from a Matrix of Integer values.
+Version: 1.0
+Date: 2018-02-01
+Author: Danilo da Silveira Figueira
+Maintainer: Danilo <danilo@csr.ufmg.br>
+Description: A simple package to create png from a array without any compression and without discarding any cell value.
+        Just use the function (Matrix Integer, Filepath).
+        Its a port for the library https://github.com/misc0110/libattopng .
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.14)
+LinkingTo: Rcpp
+NeedsCompilation: false
+Packaged: 2018-02-06 19:27:57 UTC; Danilo2
