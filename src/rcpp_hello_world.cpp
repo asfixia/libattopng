@@ -17,7 +17,7 @@ void createPNG(const Rcpp::IntegerMatrix & mat, const CharacterVector & toFilena
 	
 	for (x = 0; x < qntCol; x++) {
 		for (y = 0; y < qntLine; y++) {
-			libattopng_set_pixel(png, x, y, mat(x, y));
+			libattopng_set_pixel(png, y, x, mat(x, y));
 		}
 	}
     libattopng_save(png, (Rcpp::as<std::string>(toFilename)).c_str());
